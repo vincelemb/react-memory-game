@@ -1,0 +1,12 @@
+.OptionSection {
+    text-align: center;
+    @apply rounded-small p-sm;
+
+    & + .OptionSection {
+        @apply mt-sm;
+    }
+
+    > h2 {
+        @apply m-none;
+    }
+}

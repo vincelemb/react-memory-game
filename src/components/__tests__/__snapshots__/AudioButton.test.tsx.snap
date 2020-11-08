@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AudioButton /> Test click event 1`] = `
+<button
+  className="_bg-white _rounded-rounded _w-xxl _h-xxl _border-none _p-xs _cursor-pointer _outline-none"
+  onClick={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+>
+  <SoundOnSvg
+    svgWidth="40"
+  />
+  <Audio
+    audioFile="audio-file-test.mp3"
+    id="music"
+  />
+</button>
+`;
+
+exports[`<AudioButton /> should render 1`] = `
+<button
+  className="_bg-white _rounded-rounded _w-xxl _h-xxl _border-none _p-xs _cursor-pointer _outline-none"
+  onClick={[MockFunction]}
+>
+  <SoundOnSvg
+    svgWidth="40"
+  />
+  <Audio
+    audioFile="audio-file-test.mp3"
+    id="music"
+  />
+</button>
+`;

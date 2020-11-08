@@ -1,0 +1,23 @@
+@import './tailwind.css';
+@import './components/Buttons';
+
+body {
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+$baseWidth: 100%;
+
+@for $i from 1 through 7 {
+    .Grid._col-#{$i} > * {
+        width: calc(#{$baseWidth / $i} - 10px);
+    }
+    .Grid._col-#{$i} > * > * {
+        width: 100%;
+    }
+}
+
+.Grid {
+    flex-wrap: wrap;
+}

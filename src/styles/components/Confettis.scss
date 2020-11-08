@@ -1,0 +1,31 @@
+// Animation confetti win
+[class|='confetti'] {
+    position: absolute;
+    z-index: 10;
+}
+
+$colors: (#d13447, #ffbf00, #263672);
+
+@for $i from 0 through 300 {
+    $width: random(8);
+    $position: random(100);
+    .confetti-#{$i} {
+        width: #{$width}px;
+        height: #{$width * 0.4}px;
+        border-radius: 100px;
+        background-color: nth($colors, random(3));
+        top: -10%;
+        left: unquote($position + '%');
+        opacity: random() + 0.5;
+        transform: rotate(#{random() * 360}deg);
+        animation: drop-#{$i} unquote(5 + random() + 's') unquote(random() + 's');
+    }
+
+    @keyframes drop-#{$i} {
+        100% {
+            top: 110%;
+            left: unquote($position + random(15) + '%');
+            // left: unquote($position + random(15) + '%');
+        }
+    }
+}

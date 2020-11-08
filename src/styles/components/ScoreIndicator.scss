@@ -1,0 +1,5 @@
+.ScoreIndicator {
+    & + .ScoreIndicator {
+        @apply ml-lg;
+    }
+}

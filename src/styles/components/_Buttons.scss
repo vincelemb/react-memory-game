@@ -1,0 +1,31 @@
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.Button {
+    @apply _outline-none;
+    @apply _leading-normal;
+    @apply _border-solid;
+    @apply _border;
+    @apply _bg-transparent;
+    @apply _m-xxs;
+    @apply _rounded-md;
+    @apply _shadow-none;
+    @apply _p-sm;
+
+    &.-dark.-active {
+        @apply _bg-primary;
+        @apply _text-white;
+    }
+
+    &.-light.-active {
+        @apply _bg-white;
+        @apply _text-primary;
+    }
+}
