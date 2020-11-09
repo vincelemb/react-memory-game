@@ -1,6 +1,4 @@
 .Card {
-    @apply _bg-lightprimary;
-
     border: none;
     box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.54);
     transform-style: preserve-3d;
@@ -28,7 +26,7 @@
     }
 
     &.-isWin {
-        @apply _bg-white;
+        background: white;
         transition: 0.5s ease-in-out all;
         transform: rotateY(180deg);
         box-shadow: none;

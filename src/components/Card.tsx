@@ -11,7 +11,7 @@ type CardProps = {
 const Card: React.FC<CardProps> = ({ clicked, found, onClick, img }) => {
     return (
         <button
-            className={`Card ${clicked ? '-isFlipped' : ''} ${
+            className={`Card _bg-lightprimary ${clicked ? '-isFlipped' : ''} ${
                 found ? '-isWin' : ''
             }`}
             draggable={false}
