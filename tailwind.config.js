@@ -17,7 +17,9 @@ module.exports = {
     letterSpacing: false,
     userSelect: false,
     backgroundAttachment: false,
-    accessibility:false,
+    accessibility: false,
+    divideWidth: false,
+    space: false,
   },
   theme: {
     fill: theme => ({
