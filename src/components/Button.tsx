@@ -1,9 +1,14 @@
 import React from 'react';
 
+export enum ETheme{
+    DARK = 'dark',
+    LIGHT = 'light'
+}
+
 type ButtonProps = {
     isActive?: boolean;
-    theme: 'dark' | 'light';
-    onClick: () => void;
+    theme: ETheme;
+    onClick?: () => void;
 };
 
 const Button: React.FC<ButtonProps> = ({ children, theme, isActive, onClick }: React.PropsWithChildren<ButtonProps>) => (
