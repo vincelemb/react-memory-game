@@ -11,7 +11,7 @@ module.exports = {
     './src/**/*.ts',
     './src/**/*.tsx',
   ],
-  prefix: '_', 
+  prefix: '_',
   corePlugins: {
     float: false,
     objectFit: false,
