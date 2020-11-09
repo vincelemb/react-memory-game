@@ -1,7 +1,7 @@
 ._space-y-auto > :not(template) ~ :not(template) {
   --space-y-reverse: 0;
   margin-top: calc(auto * calc(1 - var(--space-y-reverse)));
-  margin-bottom: calc(auto * var(--space-y-reverse));
+  margin-bottom: calc(auto * var(--space-y-reverse)); 
 }
 
 ._space-x-auto > :not(template) ~ :not(template) {

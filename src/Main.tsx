@@ -25,7 +25,7 @@ const Main = () => {
                                 title: 'Options',
                                 subcontent: (
                                     <div className="lg:_mr-none _mr-sm">
-                                        <Options />
+                                        <Options /> 
                                     </div>
                                 ),
                             },
